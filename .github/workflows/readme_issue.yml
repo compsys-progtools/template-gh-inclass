@@ -1,0 +1,34 @@
+on:
+  create
+ 
+jobs:
+  create_issue:
+    name: Create readme Issue
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Create readme
+        uses: imjohnbo/issue-bot@3daae12aa54d38685d7ff8459fc8a2aee8cea98b
+        with:
+          title: "Create a README"
+          body: |
+            A README on GitHub, is ideally a markdown file, github will render that nicely 
+          
+            ### Steps
+            - [ ] Add self as assignee to this issue
+            - [ ] check off an item 
+            
+            create the file and close this issue with your commit message
+            
+            contents:
+            ```
+            # GitHub Practice 
+            
+            Name: <your name here>
+            ```
+                    
+          pinned: false
+          close-previous: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
