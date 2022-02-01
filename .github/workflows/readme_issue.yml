@@ -1,6 +1,6 @@
 on:
   create
- 
+
 jobs:
   create_issue:
     name: Create readme Issue
@@ -13,21 +13,22 @@ jobs:
         with:
           title: "Create a README"
           body: |
-            A README on GitHub, is ideally a markdown file, github will render that nicely 
-          
+            A README on GitHub, is ideally a markdown file, github will render that nicely
+
             ### Steps
             - [ ] Add self as assignee to this issue
-            - [ ] check off an item 
-            
+            - [ ] check off another item
+            - [ ] use edit to see how they look in plain text mode, the check this off there
+
             create the file and close this issue with your commit message
-            
+
             contents:
             ```
-            # GitHub Practice 
-            
+            # GitHub Practice
+
             Name: <your name here>
             ```
-                    
+
           pinned: false
           close-previous: false
         env:
