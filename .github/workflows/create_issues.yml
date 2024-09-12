@@ -13,8 +13,8 @@ jobs:
         with:
           title: "Create an about file"
           body: |
-            Add a file `about.md` that has your name and expected graduation in it
-
+            Add a file `about.md` that has your name and expected graduation in it 
+            follow along to close this issue with  commit. 
           pinned: false
           close-previous: false
         env:
